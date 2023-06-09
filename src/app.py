@@ -10,7 +10,8 @@ from dash import Input, Output, dcc, html
 import tabs
 
 app = dash.Dash(__name__,
-                external_stylesheets=[dbc.themes.FLATLY, "./assets/css/stylesheet.css"],
+                external_stylesheets=[dbc.themes.FLATLY, "./assets/css/stylesheet.css",
+                                      "./assets/css/timeline.css"],
                 title="Mitch Pudil",
                 update_title="Loading...")
 

@@ -27,7 +27,7 @@ LAYOUT = html.Div(
                         style={
                         'position': 'absolute',
                         'top': '50%',
-                        'left': '35%',
+                        'left': '25%',
                         'transform': 'translate(-50%, -50%)',
                         'font-size': '20px',
                         'text-align': 'center'

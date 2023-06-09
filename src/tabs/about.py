@@ -4,7 +4,7 @@ from dash import dcc
 
 bio = dcc.Markdown("""Hi! I'm Mitchell, a data scientist located in Salt Lake City with an unwavering passion for turning raw data into meaningful insights.
 
-I currently serve as a data scientist and data science manager at a software consulting firm for Meta where I lead a team in
+I currently serve as a lead data scientist and data science manager at a software consulting firm for Meta where I lead a team in
 crafting innovative solutions that drive real-world impact.
 
 Beyond the world of data, I'm an avid bowler, having competed in national tournaments, and a skilled billiards player.

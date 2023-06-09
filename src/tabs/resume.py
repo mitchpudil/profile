@@ -107,7 +107,8 @@ LAYOUT = html.Div(
                             html.Div([
                                 dcc.Markdown(
                                 """
-                                Carnegie Mellon University [(#5 in Statistics)](https://www.usnews.com/best-graduate-schools/top-science-schools/statistics-rankings)
+                                Carnegie Mellon University
+                                [(Ranked #5 in Statistics)](https://www.usnews.com/best-graduate-schools/top-science-schools/statistics-rankings)
 
                                 **GPA**: 4.00/4.00
                                 """
@@ -125,7 +126,8 @@ LAYOUT = html.Div(
                             html.Div("Data Scientist", className="title"),
                             html.Div([
                                 html.P("Codazen"),
-                                add_badges(["Deep Learning", "Computer Vision", "NLP", "AWS", "Pytorch", "Python"])
+                                add_badges(["Deep Learning", "Computer Vision", "NLP", "AWS", "Pytorch",
+                                            "Python", "Python Web Development"])
                                 ],
                                 className="descr"
                             ),
