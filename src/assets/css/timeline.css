@@ -1,0 +1,29 @@
+/* CSS for the line container */
+.line-container {
+  position: relative;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  height: 100vh; /* Adjust the height of the line container as needed */
+  width: 10px; /* Adjust the width of the line container as needed */
+  background-color: lightgray;
+}
+
+/* CSS for the line */
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px; /* Adjust the width of the line as needed */
+  background-color: gray;
+}
+
+/* CSS for the purple circles */
+.purple-circle {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px; /* Adjust the size of the purple circles as needed */
+  width: 20px; /* Adjust the size of the purple circles as needed */
+  border-radius: 50%;
+  background-color: purple;
+}

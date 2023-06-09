@@ -1,2 +1,2 @@
 # profile
-Public personal profile with top projects
+Self-created public personal profile with top projects

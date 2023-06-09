@@ -1,0 +1,36 @@
+name: AWS Elastic Beanstalk Deployment
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: "us-west-1"
+    strategy:
+      matrix:
+        python-version: [3.7]
+    steps:
+    - uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+        token: ${{ secrets.PAT }}
+        ref: main
+    - name: Install and run deployment
+      run: |
+        python -m pip install --upgrade pip
+        pip install --no-cache-dir awsebcli poppler-utils
+        eb deploy personal-profile
+    - name: Revert commit on deployment failure
+      if: ${{ failure() }}
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git reset --hard 'HEAD~1'
+        git push --force
