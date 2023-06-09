@@ -19,7 +19,7 @@ def get_card(title, text, href, icon, *args, **kwargs):
                 ]
             ),
         ],
-        style={"width": "24rem", 'background-color': "#e9e9f2", "text-align": 'center', "border-width": "0px"},
+        style={"width": "24rem", 'background-color': "#e4e4f2", "text-align": 'center', "border-width": "0px"},
     )
 
     return card_content
@@ -30,8 +30,8 @@ titles = ["Computer Vision", "Cloud Computing", "Natural Language Processing (NL
 descriptions = {
     "Computer Vision": "I develop and implement advanced image processing algorithms and applications.",
     "Cloud Computing": "I leverage Python and AWS products to train and deploy deep learning models.",
-    "Natural Language Processing (NLP)": " I analyze and extract meaningful insights from textual data",
-    "Python Web Development": "I build custom web apps in Python to showcase data science capabilities. In fact, I built this entire website with Dash!",
+    "Natural Language Processing (NLP)": "I analyze and extract meaningful insights from textual data",
+    "Python Web Development": "I build custom web apps in Python to showcase data science capabilities and build surveys for data collection. In fact, I built this entire website with Dash!",
     "Deep Learning": "I leverage PyTorch to design, train, and deploy deep neural networks for tasks such as image classification, NLP, and computer vision.",
     "Statistics": "I apply statistical methods, with a focus on machine learning, to analyze data and build advanced predictive models."
 }
