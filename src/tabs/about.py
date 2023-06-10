@@ -44,7 +44,7 @@ social_links = html.Footer([
 
 
 # Define the list of images
-image_paths = [{"key": i, "src": f"assets/mitch_pics/mitch{i}.png"} for i in range(9)]
+image_paths = [{"key": i, "src": f"assets/mitch_pics/mitch{i}.png"} for i in range(8)]
 # Initialize the index of the displayed image
 current_image_index = 0
 

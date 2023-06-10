@@ -74,8 +74,8 @@ sidebar = html.Div(
                             href="/portfolio/perception",
                             active="exact",
                             style={**NAV_BUTTON_STYLE, "paddingLeft": "4rem"}),
-                dbc.NavLink("PROJECT 2",
-                            href="/portfolio/project2",
+                dbc.NavLink("APHASIA",
+                            href="/portfolio/aphasia",
                             active="exact",
                             style={**NAV_BUTTON_STYLE, "paddingLeft": "4rem"}),
                 dbc.NavLink("PROJECT 3",
@@ -125,6 +125,8 @@ def render_page(path):
         return tabs.portfolio.LAYOUT
     elif path == "/portfolio/perception":
         return tabs.perception.LAYOUT
+    elif path == "/portfolio/aphasia":
+        return tabs.aphasia.LAYOUT
     elif path == "/scout":
         return tabs.scout.LAYOUT
     else:
@@ -132,6 +134,7 @@ def render_page(path):
 
 # Add callbacks for each custom page here
 tabs.homepage.add_callbacks(app)
+tabs.aphasia.add_callbacks(app)
 
 
 if __name__ == "__main__":

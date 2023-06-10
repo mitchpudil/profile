@@ -1,1 +1,1 @@
-from . import (homepage, resume, about, portfolio, perception, scout, not_found)
+from . import (homepage, resume, about, portfolio, perception, aphasia, scout, not_found)

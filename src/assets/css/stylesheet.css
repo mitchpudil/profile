@@ -40,3 +40,16 @@
     justify-content: center;
   }
 
+  .carousel-image .carousel-inner img {
+    height: 300px;  /* Set the desired height of the carousel images */
+    object-fit: cover;  /* Adjust image positioning to fill the carousel */
+}
+
+.circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+}

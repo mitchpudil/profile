@@ -34,7 +34,7 @@ download_image_button = dbc.Button(
 # Create the layout
 
 def add_badges(badges_list):
-    return html.P([dbc.Badge(badge, className="ms-1") for badge in badges_list])
+    return html.P([dbc.Badge(badge, className="ms-1") for badge in badges_list], style={'margin-top': '10px'})
 
 BANNER_STYLE = {
     "position": "absolute",
@@ -92,7 +92,7 @@ LAYOUT = html.Div(
                             html.Div("May 2019 - August 2019", className="date"),
                             html.Div("Data Science Intern", className="title"),
                             html.Div([
-                                html.P("OrderBoard"),
+                                dcc.Link("OrderBoard", href="https://www.orderboard.ai/", style={'color': "#16688c"}),
                                 add_badges(["AWS", "R", "MySQL"])
                                 ],
                                 className="descr"
@@ -105,14 +105,10 @@ LAYOUT = html.Div(
                             html.Div("May 2020", className="date"),
                             html.Div("Master’s in Data Science: Statistical Practice Emphasis", className="title"),
                             html.Div([
-                                dcc.Markdown(
-                                """
-                                Carnegie Mellon University
-                                [(Ranked #5 in Statistics)](https://www.usnews.com/best-graduate-schools/top-science-schools/statistics-rankings)
-
-                                **GPA**: 4.00/4.00
-                                """
-                                ),
+                                html.P("Carnegie Mellon University", style={'margin-bottom': '5px'}),
+                                dcc.Link("(Ranked #5 in Statistics)", href="https://www.usnews.com/best-graduate-schools/top-science-schools/statistics-rankings", 
+                                         style={'color': "#16688c", "font-size": "16px"}),
+                                dcc.Markdown("**GPA**: 4.00/4.00", style={'margin-top': '15px'}),
                                 add_badges(["Forecasting", "Machine Learning", "Python", "R", "Statistics", "Coauthor"])
                                 ],
                                 className="descr",
@@ -125,7 +121,7 @@ LAYOUT = html.Div(
                             html.Div("May 2020 - May 2021", className="date"),
                             html.Div("Data Scientist", className="title"),
                             html.Div([
-                                html.P("Codazen"),
+                                dcc.Link("Codazen", href="https://www.codazen.com/", style={'color': "#16688c"}),
                                 add_badges(["Deep Learning", "Computer Vision", "NLP", "AWS", "Pytorch",
                                             "Python", "Python Web Development"])
                                 ],
@@ -139,8 +135,9 @@ LAYOUT = html.Div(
                             html.Div("May 2021 - Present", className="date"),
                             html.Div("Lead Data Scientist & Data Science Manager", className="title"),
                             html.Div([
-                                html.P("Codazen"),
-                                add_badges(["Leadership", "Hiring", "Cloud Computing", "Generative Models", "Client Meetings", "Point of Contact", "Team Building"])
+                                dcc.Link("Codazen", href="https://www.codazen.com/", style={'color': "#16688c"}),
+                                add_badges(["Leadership", "Hiring", "Cloud Computing", "Generative Models", "API Deployment", "Client Meetings",
+                                            "Point of Contact", "Team Building"])
                                 ],
                                 className="descr",
                             ),
