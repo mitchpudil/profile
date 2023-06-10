@@ -2,7 +2,6 @@ import dash
 import dash_bootstrap_components as dbc
 import dash_html_components as html
 from dash import ALL, Input, Output, dcc, html
-from dash_iconify import DashIconify
 
 abstract = """At Carnegie Mellon University in 2019-2020, I co-authored
 [Enhancing the classification of aphasia: a statistical analysis using connected speech](https://pubmed.ncbi.nlm.nih.gov/36457942/) for the journal _Aphasiology_.
@@ -82,12 +81,12 @@ card_contents = [
 
 
 NAV_BUTTONS = html.Div([
-    html.Button(DashIconify(icon="teenyicons:left-outline", width=45), n_clicks=0, id={'type': 'back-button', 'index': 0}),
+    html.Button("<", style={'font-size': '48px', 'border': 'none', 'background-color': "#e9e9f2"}, n_clicks=0, id={'type': 'back-button', 'index': 0}),
     html.Div(
         [html.Span(className='circle', id={'type': 'circle', 'index': i}) for i in range(6)],
         style={'display': 'inline-block', 'margin-left': '10px'}
     ),
-    html.Button(DashIconify(icon="teenyicons:right-outline", width=45), id={'type': 'forward-button', 'index': 0}, n_clicks=0),
+    html.Button(">", style={'font-size': '48px', 'border': 'none', 'background-color': "#e9e9f2"}, n_clicks=0, id={'type': 'forward-button', 'index': 0}),
 ], style={
     'position': 'absolute',
     'top': '85%',
