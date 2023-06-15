@@ -52,7 +52,7 @@ LAYOUT = html.Div([
         dbc.Button('Grade', id={'type': 'toefl-run-button', 'index': 0}),
         dbc.Button('Grade Placeholder', id={'type': 'toefl-grade-placeholder', 'index': 0}, style={'margin-left': '10px'}),
         html.Br(),
-        html.Div(id={"type": 'toefl-output-div', "index": 0})
+        dcc.Loading(html.Div(id={"type": 'toefl-output-div', "index": 0}), type="dot")
     ], style={'width': '80%', 'margin-left': '10%', "margin-top": "100px", 'font-size': '20px'})
 ])
 
