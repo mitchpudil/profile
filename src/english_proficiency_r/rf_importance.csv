@@ -1,0 +1,13 @@
+feature,IncNodePurity,comment,good_feature,feature_name
+uniquewords,0.25294992,Use More Unique Words,True,Unique Words
+ADJ-PART,0.11504264,"Use More Sentences with Adverbial Particles",True,Adverbial Particles
+words,0.0833883,Use More Words in General,True,Words
+sentences,0.11356114,Aim to Use Around 15 Sentences.,False,Sentences
+av_word_len,0.08672021,Use Longer Words,True,Average Word Length
+ADV-VERB,0.0654871,"Use More Verbs with Modifiers",True,Verbs with Modifiers
+would,0.04625375,"Use More Auxiliary Verbs",True,Auxiliary Verbs
+ADJ,0.06619979,Use More Adjectives,True,Adjectives
+NOUN-PUNCT,0.05878427,Use Fewer Sentences with Nouns at the End of the Sentence.,False,Sentences Ending with Nouns
+of,0.059277,Use More Prepositional Phrases,True,Prepositional Phrases
+confidencehedged,0.03025107,"Use More Lower-Confidence Phrases",True,Low-confidence Phrases
+confidencehigh,0.0220848,"Use More High-Confidence Phrases",True,High-confidence Phrases
