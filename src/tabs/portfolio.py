@@ -9,7 +9,7 @@ def get_card(title, text, icon, *args, **kwargs):
             dbc.CardBody(
                 [
                     DashIconify(icon=icon, width=45, *args, **kwargs),
-                    html.Div(html.B(html.U(html.H4(title, id=title))), style={'margin-top': '30px'}),
+                    html.Div(html.B(html.B(html.H4(title, id=title))), style={'margin-top': '30px'}),
                     dcc.Markdown(text, className="card-text", style={"color": "dark gray"}),
                     html.Div(id="card-click-area", style={"cursor": "pointer"})
                 ]
@@ -30,7 +30,9 @@ descriptions = {
     "Python Web Development": """I build custom web apps in Python to showcase data science capabilities
     and build surveys for data collection. *In fact, I built this entire portfolio with Dash!*
     (see code [here](https://github.com/mitchpudil/profile))""",
-    "Deep Learning": "I leverage PyTorch to design, train, and deploy deep neural networks for tasks such as image classification, NLP, and computer vision.",
+    "Deep Learning": """I leverage PyTorch to design, train, and deploy deep neural networks for tasks such as
+    image classification, NLP, and computer vision. I'm particularly enthusiastic about constructing multi-modal
+    models that leverage diverse data types within a unified model.""",
     "Statistics": "I apply statistical methods, with a focus on machine learning, to analyze data and build advanced predictive models."
 }
 
@@ -137,7 +139,7 @@ LAYOUT = html.Div(
                     style=BANNER_STYLE,
                 )
             ],
-            style={"text-align": "center", "font-size": "20px"},
+            style={"text-align": "center", "font-size": "20px", "margin-bottom": "100px"},
         ),
         card_div,
     ]

@@ -33,7 +33,7 @@ LAYOUT = html.Div(
                         'text-shadow': '2px 2px 4px #000000',
                         'text-align': 'center'
                     }
-                )
+                ),
             ],
             style={'position': 'relative'}
         )

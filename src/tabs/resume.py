@@ -20,8 +20,6 @@ def encode_pdf():
         encoded_pdf = base64.b64encode(file.read()).decode('utf-8')
     return encoded_pdf
 
-# img = [html.Img(src=image, style={'width': '90%', 'margin-left': '50px'}) for image in images]
-
 download_image_button = dbc.Button(
     DashIconify(icon="formkit:downloadcloud", width=48),
     id="download-resume",
@@ -92,7 +90,7 @@ LAYOUT = html.Div(
                             html.Div("May 2019 - August 2019", className="date"),
                             html.Div("Data Science Intern", className="title"),
                             html.Div([
-                                dcc.Link("OrderBoard", href="https://www.orderboard.ai/", style={'color': "#16688c"}),
+                                dcc.Link("OrderBoard", href="https://www.orderboard.ai/"),
                                 add_badges(["AWS", "R", "MySQL"])
                                 ],
                                 className="descr"
@@ -107,7 +105,7 @@ LAYOUT = html.Div(
                             html.Div([
                                 html.P("Carnegie Mellon University", style={'margin-bottom': '5px'}),
                                 dcc.Link("(Ranked #5 in Statistics)", href="https://www.usnews.com/best-graduate-schools/top-science-schools/statistics-rankings", 
-                                         style={'color': "#16688c", "font-size": "16px"}),
+                                         style={"font-size": "16px"}),
                                 dcc.Markdown("**GPA**: 4.00/4.00", style={'margin-top': '15px'}),
                                 add_badges(["Forecasting", "Machine Learning", "Python", "R", "Statistics", "Coauthor"])
                                 ],
@@ -121,9 +119,9 @@ LAYOUT = html.Div(
                             html.Div("May 2020 - May 2021", className="date"),
                             html.Div("Data Scientist", className="title"),
                             html.Div([
-                                dcc.Link("Codazen", href="https://www.codazen.com/", style={'color': "#16688c"}),
-                                add_badges(["Deep Learning", "Computer Vision", "NLP", "AWS", "Pytorch",
-                                            "Python", "Python Web Development"])
+                                dcc.Link("Codazen", href="https://www.codazen.com/"),
+                                add_badges(["Deep Learning", "Computer Vision", "Recommendation Engines", "NLP", "AWS",
+                                            "Pytorch", "Python", "Python Web Development"])
                                 ],
                                 className="descr"
                             ),
@@ -135,7 +133,7 @@ LAYOUT = html.Div(
                             html.Div("May 2021 - Present", className="date"),
                             html.Div("Lead Data Scientist & Data Science Manager", className="title"),
                             html.Div([
-                                dcc.Link("Codazen", href="https://www.codazen.com/", style={'color': "#16688c"}),
+                                dcc.Link("Codazen", href="https://www.codazen.com/"),
                                 add_badges(["Leadership", "Hiring", "Cloud Computing", "Generative Models", "API Deployment", "Client Meetings",
                                             "Point of Contact", "Team Building"])
                                 ],

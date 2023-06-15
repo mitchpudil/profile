@@ -54,6 +54,7 @@ sidebar = html.Div(
         html.A(html.H2("M. Pudil"),
                href="/",
                style={"text-decoration": "inherit", "color": "inherit"}),
+        html.P("(Please view on full-screen desktop)"),
         html.Hr(),
         dbc.Nav(
             [
@@ -78,16 +79,8 @@ sidebar = html.Div(
                             href="/portfolio/aphasia",
                             active="exact",
                             style={**NAV_BUTTON_STYLE, "paddingLeft": "4rem"}),
-                dbc.NavLink("PROJECT 3",
-                            href="/portfolio/project3",
-                            active="exact",
-                            style={**NAV_BUTTON_STYLE, "paddingLeft": "4rem"}),
-                dbc.NavLink("PROJECT 4",
-                            href="/portfolio/project4",
-                            active="exact",
-                            style={**NAV_BUTTON_STYLE, "paddingLeft": "4rem"}),
-                dbc.NavLink("PROJECT 5",
-                            href="/portfolio/project5",
+                dbc.NavLink("ENGLISH PROFICIENCY",
+                            href="/portfolio/toefl",
                             active="exact",
                             style={**NAV_BUTTON_STYLE, "paddingLeft": "4rem"}),
                 dbc.NavLink("SCOUT",
@@ -127,6 +120,8 @@ def render_page(path):
         return tabs.perception.LAYOUT
     elif path == "/portfolio/aphasia":
         return tabs.aphasia.LAYOUT
+    elif path == "/portfolio/toefl":
+        return tabs.english_proficiency.LAYOUT
     elif path == "/scout":
         return tabs.scout.LAYOUT
     else:
@@ -136,6 +131,7 @@ def render_page(path):
 tabs.homepage.add_callbacks(app)
 tabs.aphasia.add_callbacks(app)
 tabs.perception.add_callbacks(app)
+tabs.english_proficiency.add_callbacks(app)
 
 
 if __name__ == "__main__":

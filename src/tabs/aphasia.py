@@ -121,7 +121,7 @@ LAYOUT = html.Div(
             style=BANNER_STYLE,
             children=[
                 html.H2("Reclassification of Aphasia"),
-                html.H4("How I used machine learning and statistics to redefine the way clinicians understand Aphasia"),
+                html.H4("I transformed clinicians' perception of Aphasia with ML")
             ],
         ),
         html.Div(

@@ -64,9 +64,8 @@ IMAGES_VIDEOS = [
 ]
 
 
-
-summary = """As the lead data scientist and manager of a small, dedicated team, I spearheaded the development
-of "Perception" by leveraging advanced deep learning techniques.
+summary = """As the lead data scientist of a small, dedicated team, I spearheaded the development
+of [Perception](https://www.perception.io/) by leveraging advanced deep learning techniques.
 
 Through the utilization of complex
 methods such as conditional variational autoencoders, transformer architectures, and multi-modal
@@ -87,7 +86,7 @@ of colors. """
 pipeline = """I'm currently involved in designing a pipeline based on survey results, user feedback, and website
 interactions to improve the generative models related to Perception.
 
-We've integrated SageMaker, AWS ECS, AWS ECR, DynamoDB, and MySQL into our pipeline for seamless updates.
+We've integrated various AWS services into our pipeline for seamless updates.
 By automating the model update process using these services, we provide users with the latest advancements
 while maintaining data integrity and robustness.
 """
@@ -179,7 +178,7 @@ LAYOUT = html.Div(
             style=BANNER_STYLE,
             children=[
                 html.H2("Perception"),
-                html.H4("Using deep learning to unlock the power of design"),
+                html.H4("I taught semi conductors what colors feel like")
             ],
         ),
         html.Div(
